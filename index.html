@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>STONEFACE</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row" style="margin-top: 5%">
+      <h3>STONEFACE - artificial stoniness</h3>
+    </div>
+
+
+    <div class="row">
+      <div class="one-half column " style="margin-top: 5%">
+        <p>STONEFACE is a web app that assesses how you're feeling by your facial expression, then recommends a weed strain for your current emotional state. All the face-recognition stuff happens in the browser, so no information is ever sent to a server. That means your face, emotion, and weed strain are completely private!</p>
+      </div>
+
+      <div class="one-half column " style="margin-top: 5%">
+        <div id="viewfinder">
+          <canvas id="canvas" height="0" width="480"></canvas>
+         <video id="player" width="480" autoplay></video>
+      </div>
+      <button  id="upload">Upload</button>
+        <button  id="record">Camera On</button>
+       <button class="button-primary" id="capture">Capture</button>
+     </div>
+
+    <div class="row">
+      <div class="one-half column" style="margin-top: 5%">
+        <p id="recommendation"></p>
+      </div>
+      <div class="one-half column ">
+    </div>
+
+    </div>
+
+
+<!-- JS resources
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script type="text/javascript" src="js/webCapture.js" ></script>
+<script src="js/faceAnalyzer.js"></script>
+<script src="js/clmtrackr.js" ></script>
+<script src="js/utils.js"></script>
+<script src="js/model_pca_20_svm.js"></script>
+<script src="js/emotion_classifier.js"></script>
+<script src="js/emotionmodel.js"></script>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
